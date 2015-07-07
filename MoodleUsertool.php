@@ -74,22 +74,6 @@ class MoodleUsertool {
     }
     
     
-    /* Creates a test user for use when creating a user.
-     * Returns the data structure to pass to Moodle.
-     */
-    function getTestusers() {
-        $randid = rand(1000,9999);
-        $user1 = array('username' => 'mwahaha' . $randid,
-                       'password' => 'Password08!',
-                       'firstname' => 'Zlatko' . $randid,
-                       'lastname' => 'Vladko',
-                       'email' => 'm' . $randid . '@example.com');
-    
-        $users = array('users' => array($user1));
-    
-        return $users;
-    }
-
     /* Creates a test enrollment for use when creating a user.
      * Returns the data structure to pass to Moodle.
      */
